@@ -1,0 +1,75 @@
+export const DB_DATA = [
+  { user_name: 'Alice Kumar', email: 'alice@acme.com', company_name: 'Acme Corp', region: 'North', plan_type: 'Enterprise', payment_status: 'paid', grand_total: 45000, revenue: 42000, mrr: 3750, arr: 45000, churn_rate: 2.1 },
+  { user_name: 'Bob Singh', email: 'bob@techco.com', company_name: 'TechCo', region: 'South', plan_type: 'Pro', payment_status: 'unpaid', grand_total: 22000, revenue: 20000, mrr: 1833, arr: 22000, churn_rate: 8.4 },
+  { user_name: 'Priya Shah', email: 'priya@globalx.in', company_name: 'GlobalX', region: 'West', plan_type: 'Enterprise', payment_status: 'paid', grand_total: 78000, revenue: 75000, mrr: 6500, arr: 78000, churn_rate: 1.2 },
+  { user_name: 'Raj Patel', email: 'raj@startupz.io', company_name: 'StartupZ', region: 'East', plan_type: 'Starter', payment_status: 'unpaid', grand_total: 8500, revenue: 8000, mrr: 708, arr: 8500, churn_rate: 15.3 },
+  { user_name: 'Neha Verma', email: 'neha@mfg.com', company_name: 'ManufactureCo', region: 'North', plan_type: 'Pro', payment_status: 'paid', grand_total: 31000, revenue: 29000, mrr: 2583, arr: 31000, churn_rate: 3.8 },
+  { user_name: 'Arun Joshi', email: 'arun@bank.in', company_name: 'FinBank', region: 'South', plan_type: 'Enterprise', payment_status: 'paid', grand_total: 92000, revenue: 89000, mrr: 7667, arr: 92000, churn_rate: 0.9 },
+  { user_name: 'Kavya Nair', email: 'kavya@retail.com', company_name: 'RetailHub', region: 'West', plan_type: 'Pro', payment_status: 'unpaid', grand_total: 18000, revenue: 17000, mrr: 1500, arr: 18000, churn_rate: 9.7 },
+]
+
+export const DEMO_JOBS = [
+  { id: 'RPT-1001', name: 'Q4 Revenue Analysis', type: 'Y', attrs: ['user_name', 'email', 'revenue', 'grand_total'], status: 'COMPLETED', progress: 100, hoursAgo: 2 },
+  { id: 'RPT-1002', name: 'User Churn Report', type: 'Y', attrs: ['user_name', 'company_name', 'churn_rate', 'region'], status: 'COMPLETED', progress: 100, hoursAgo: 5 },
+  { id: 'RPT-1003', name: 'Test MRR Export', type: 'N', attrs: ['user_name', 'mrr', 'arr'], status: 'FAILED', progress: 0, hoursAgo: 8 },
+  { id: 'RPT-1004', name: 'Monthly KPIs', type: 'Y', attrs: ['company_name', 'grand_total', 'revenue'], status: 'COMPLETED', progress: 100, hoursAgo: 24 },
+]
+
+export const PLANS = [
+  {
+    id: 'free',
+    name: 'Free',
+    price: { monthly: 0, yearly: 0 },
+    desc: 'Perfect for individuals exploring BI reporting.',
+    badge: null,
+    features: [
+      '5 reports / month',
+      'Basic column selection',
+      'CSV export only',
+      'Email support',
+      '7-day data history',
+    ],
+    disabled: ['Scheduled reports', 'Analytics charts', 'Cube engine', 'ActiveMQ monitor'],
+    cta: 'Get started free',
+    color: '#1a7a4a',
+  },
+  {
+    id: 'pro',
+    name: 'Pro',
+    price: { monthly: 29, yearly: 23 },
+    desc: 'For teams that need automation and analytics.',
+    badge: 'Most Popular',
+    features: [
+      'Unlimited reports',
+      'All column types',
+      'Excel + PDF export',
+      'Analytics & charts',
+      'Scheduled auto-delivery',
+      'Email notifications',
+      '90-day data history',
+    ],
+    disabled: ['Cube engine', 'ActiveMQ monitor', 'Multi-user management'],
+    cta: 'Start Pro trial',
+    color: '#6366f1',
+  },
+  {
+    id: 'enterprise',
+    name: 'Enterprise',
+    price: { monthly: 99, yearly: 79 },
+    desc: 'Full control for large teams and enterprises.',
+    badge: 'Full Access',
+    features: [
+      'Everything in Pro',
+      'Cube / Group By engine',
+      'ActiveMQ monitor',
+      'Admin + User roles',
+      'Unlimited users',
+      'Custom data sources',
+      'Unlimited history',
+      'Priority support + SLA',
+    ],
+    disabled: [],
+    cta: 'Contact sales',
+    color: '#0ea5e9',
+  },
+]

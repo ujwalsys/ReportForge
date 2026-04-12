@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600;9..144,700;9..144,800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --land-bg: #f7f6f2;
+  --land-ink: #0f0e0a;
+  --land-muted: #6b6960;
+  --land-green: #1a7a4a;
+  --land-green2: #2d9e65;
+  --land-sage: #e8f0eb;
+  --land-border: #e0ded8;
+  --land-card: #ffffff;
+
+  --adm-bg: #f0f7f3;
+  --adm-surface: #ffffff;
+  --adm-surface2: #f5faf7;
+  --adm-surface3: #ebf5ef;
+  --adm-border: #d0e8da;
+  --adm-border2: #b5d9c5;
+  --adm-accent: #1a7a4a;
+  --adm-accent2: #2d9e65;
+  --adm-accent3: #0ea5e9;
+  --adm-green: #10b981;
+  --adm-yellow: #d97706;
+  --adm-red: #dc2626;
+  --adm-pink: #ec4899;
+  --adm-text: #0d2318;
+  --adm-text2: #3d6b53;
+  --adm-text3: #85b09a;
+
+  --usr-bg: #f0f7f3;
+  --usr-surface: #ffffff;
+  --usr-surface2: #f5faf7;
+  --usr-surface3: #ebf5ef;
+  --usr-border: #d0e8da;
+  --usr-border2: #b5d9c5;
+  --usr-accent: #1a7a4a;
+  --usr-accent2: #2d9e65;
+  --usr-accent3: #0ea5e9;
+  --usr-yellow: #d97706;
+  --usr-red: #dc2626;
+  --usr-text: #0d2318;
+  --usr-text2: #3d6b53;
+  --usr-text3: #85b09a;
+
+  --font-d: 'Fraunces', serif;
+  --font-b: 'Plus Jakarta Sans', sans-serif;
+  --font-m: 'JetBrains Mono', monospace;
+  --r: 12px;
+  --sidebar-w: 240px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-b); background: var(--land-bg); color: var(--land-ink); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+
+button { cursor: pointer; font-family: var(--font-b); border: none; transition: all 0.2s; }
+input, select, textarea { font-family: var(--font-b); outline: none; }
+a { text-decoration: none; }
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(0,0,0,.15); border-radius: 3px; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px) scale(0.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.8); }
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+@keyframes slideInRight {
+  from { transform: translateX(120%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes slideOutRight {
+  from { transform: translateX(0); opacity: 1; }
+  to { transform: translateX(120%); opacity: 0; }
+}
+
+.animate-fadeUp { animation: fadeUp 0.6s ease both; }
+.animate-fadeUp-1 { animation: fadeUp 0.6s 0.1s ease both; }
+.animate-fadeUp-2 { animation: fadeUp 0.6s 0.2s ease both; }
+.animate-fadeUp-3 { animation: fadeUp 0.6s 0.3s ease both; }
+.animate-fadeUp-4 { animation: fadeUp 0.6s 0.4s ease both; }
+.spin { animation: spin 1s linear infinite; display: inline-block; }
