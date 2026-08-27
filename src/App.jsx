@@ -5,7 +5,7 @@ import Landing from './pages/Landing'
 import Auth from './pages/Auth'
 import Welcome from './pages/Welcome'
 import Dashboard from './pages/Dashboard'
-import './styles/globals.css'
+import './styles/globals.css' 
 
 function ProtectedRoute({ children }) {
   const { user } = useAuth()
